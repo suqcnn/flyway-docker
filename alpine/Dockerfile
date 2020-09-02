@@ -12,7 +12,7 @@ USER flyway
 
 ENV FLYWAY_VERSION 6.5.5
 
-RUN wget https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLYWAY_VERSION}/flyway-commandline-${FLYWAY_VERSION}.tar.gz \
+RUN wget https://maven.aliyun.com/repository/public/org/flywaydb/flyway-commandline/${FLYWAY_VERSION}/flyway-commandline-${FLYWAY_VERSION}.tar.gz \
   && tar -xzf flyway-commandline-${FLYWAY_VERSION}.tar.gz \
   && mv flyway-${FLYWAY_VERSION}/* . \
   && rm flyway-commandline-${FLYWAY_VERSION}.tar.gz
